@@ -1,0 +1,227 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/recursos/css/bootstrap.min.css">
+    <title>Pagina efectos EW</title>
+    <style>
+        #body1 {
+            background-color: rgb(0, 0, 0);
+        }
+
+        #navbar {
+            animation: on 2s 1;
+            /*             animation: a  2s  2s  infinite ; */
+        }
+
+        @keyframes on {
+            0% {
+                box-shadow: 0 0 2rem 1rem rgb(128, 126, 0);
+            }
+
+            25% {
+                box-shadow: 0 0 2rem 1rem rgb(0, 255, 255);
+            }
+
+            75% {
+                box-shadow: 0 0 2rem 1rem rgb(0, 58, 58);
+            }
+
+            100% {
+                box-shadow: 0 0 2rem 1rem rgb(0, 255, 255);
+            }
+        }
+
+        #main {
+            background-color: rgb(0, 0, 0);
+            /*             box-shadow: 0 0 2rem 2rem inset tomato; */
+            /*             border-bottom: 10px red solid; */
+            animation: 1s a infinite;
+            animation-delay: 2.5s;
+            transition: 1s;
+        }
+
+        @keyframes a {
+            0% {
+                box-shadow: 0 0 2rem 0.5rem inset rgb(0, 255, 255);
+            }
+
+            100% {
+                box-shadow: 0 0 2rem 0.5rem inset rgb(0, 255, 255);
+            }
+        }
+
+        #none {
+            color: rgba(255, 255, 255, 0.226);
+            transition: 1s;
+        }
+
+        #none:hover {
+            transition: 2s;
+            color: rgb(255, 255, 255);
+        }
+
+        #body2 {
+            background-color: rgb(0, 0, 0);
+            transition: 1s;
+        }
+
+        #text {
+            background-color: blue;
+        }
+
+        #body2:hover {
+            transition: 2s;
+            color: rgb(0, 247, 247);
+        }
+/* 
+        #sub:hover {
+            color: blue;
+        } */
+/*         #img:hover{
+            box-shadow: 0px 0px 10px 10px  blue;
+            background: blue;
+        } */
+    </style>
+
+<body id="body1" class="container-fluid">
+    <div>
+        <nav id="navbar" class="navbar navbar-expand-lg ">
+            <div class="container-fluid" id="none">
+                <a class="navbar-brand" href="#" id="none">Efectos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!--                 <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="main">
+        <br>
+        <br>
+        <br>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100" id="body2">
+                    <img id="img" src="/recursos/image/x-simbolo_318-1407.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" id="body2">
+                    <img src="/recursos/image/x-simbolo_318-1407.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" id="body2">
+                    <img src="/recursos/image/x-simbolo_318-1407.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This card has even longer content than the first to show that equal
+                            height action.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+    <div id="main">
+        <br>
+        <br>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100" id="body2">
+                    <img src="/recursos/image/x-simbolo_318-1407.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" id="body2">
+                    <img src="/recursos/image/x-simbolo_318-1407.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" id="body2">
+                    <img src="/recursos/image/x-simbolo_318-1407.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This card has even longer content than the first to show that equal
+                            height action.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+
+
+    <!-- main -->
+</body>
+
+<!-- Script -->
+
+<script src="recursos/js/bootstrap.min.js"></script>
+<script src="recursos/js/jquery-3.6.0.min.js"></script>
+<!--     <script src="/bootstrap.bundle.min.js"></script> -->
+<script src="recursos/js/popper.min.js"></script>
+</body>
+
+</html>
